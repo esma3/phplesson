@@ -1,0 +1,236 @@
+#chat{
+
+    width:40px;
+    height:40px;
+    /* background:red; */
+    /* z-index:13; */
+    float:left;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    
+
+}
+#chatbox{
+   margin:0 auto;
+   padding:0px;
+    width:400px;
+    height:800px;
+    background:lightskyblue;
+    /* z-index: 11; */
+    float:left;
+    position:fixed;
+    right:-400px;
+    transition: 1s;  
+    border-radius: 30px;
+}
+
+
+#main{
+    width:100px;
+    height:100px;
+    float:left;
+    background: violet;
+    position: relative;
+    
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    top:100px;
+    left:30px;
+    transition: 1s;  
+
+}
+
+#demo{
+    position:absolute;
+    top:20px;
+    left:20px;
+    
+}
+#demo1{
+    position:absolute;
+    top:76px;
+    left:280px;
+
+}
+
+#demo8{
+    position:absolute;
+    top:110px;
+    left:20px;
+
+}
+#height{
+    position:absolute;
+    top:150px;
+    left:20px;
+
+}
+#olchu2{
+    position:absolute;
+    top:150px;
+    left:200px;
+}
+#colorInputText{
+    position:absolute;
+    top:250px;
+    left:20px;
+
+}
+#colorInputColor{
+    position:absolute;
+    top:250px;
+    left:200px;
+}
+#colorButton{
+    position:absolute;
+    top:250px;
+    left:255px;
+}
+#demo7{
+    position:absolute;
+    top:200px;
+    left:20px;
+}
+
+
+
+
+#demo5{
+    position:absolute;
+    top:150px;
+    left:280px;
+
+}
+#demo2{
+    position:absolute;
+    top:20px;
+    left:100px;
+
+}
+#demo3{
+    position:absolute;
+    top:20px;
+    left:160px;
+
+}
+
+#demo9{
+    position:absolute;
+    top:30px;
+    left:20px;
+}
+#width{
+    position:absolute;
+    top:76px;
+    left:20px;
+}
+#olchu{
+    position:absolute;
+    top:76px;
+    left:200px;
+}
+
+
+
+
+@keyframes go{
+    0%{
+        top:10px;
+        left:30px;
+        /* transform: rotateX(60deg); */
+        
+    }
+    25%{
+        top:10px;
+        left:180px;
+        /* transform: rotateX(120deg); */
+        /* background:rgb(16, 136, 155); */
+    }
+    50%{
+        top:200px;
+        left:180px;
+        /* transform: rotateX(180deg); */
+        /* background:rgb(88, 16, 155); */
+    }
+    75%{
+        top:200px;
+        left:30px;
+        /* transform: rotateX(270deg); */
+        /* background:rgb(23, 54, 194); */
+    }
+    100%{
+        top:10px;
+        left:30px;
+        /* transform: rotateX(360deg); */
+        /* background:rgb(181, 14, 133); */
+    }
+}
+
+
+#darkmode{
+    width:70px;
+    height:50px;
+    float:left;
+    /* background: green; */
+    position: absolute;
+   bottom:90px;
+  left:10px;
+   
+}
+
+
+  body{
+    color: #121212;
+    background-color: white;
+    transition: 0.3s;
+    margin: auto;
+  }
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  .switch {
+      display: block;
+      position: relative;
+    margin: auto; 
+      width: 70px;
+      height: 40px;
+      cursor: pointer;
+      overflow: hidden;
+  }
+  .switch input {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 0;
+      height: 0;
+  }
+  .switch input + span {
+       position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: darkslateblue;
+      border-radius: 20px;
+  }
+  .switch input:checked + span {
+      background: #fff;
+  }
+  .switch input + span:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+      background: blue;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: all .3s;
+  }
+  .switch input:checked + span:before {
+      left: 34px;
+  }
